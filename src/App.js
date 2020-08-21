@@ -13,11 +13,11 @@ function App() {
   return (
     <Container>
       <Row>
-        <Col style={{ borderStyle: "solid", height: "100px" }}>
-          <Receipt />
-        </Col>
         <Col style={{ borderStyle: "solid" }}>
           <Split />
+        </Col>
+        <Col style={{ borderStyle: "solid", height: "100px" }}>
+          <Receipt />
         </Col>
       </Row>
     </Container>
