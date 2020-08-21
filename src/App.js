@@ -16,7 +16,7 @@ function App() {
         <Col style={{ borderStyle: "solid" }}>
           <Split />
         </Col>
-        <Col style={{ borderStyle: "solid", height: "100px" }}>
+        <Col style={{ borderStyle: "solid", height: "100%" }}>
           <Receipt />
         </Col>
       </Row>
