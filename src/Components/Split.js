@@ -2,15 +2,20 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+const tempUser = [1, 2, 3];
+
 const Split = () => {
+  const addUser = () => {
+    return tempUser.push(4), (<Col>Test</Col>);
+  };
   return (
     <Col>
       <Col>
         Users Listed Here
-        <Col>User 1</Col>
-        <Col>User 2</Col>
-        <Col>User 3</Col>
-        <Col>Add User (+)</Col>
+        {tempUser.map((userRow, index) => {
+          return <Col>User {userRow}</Col>;
+        })}
+        <Col onClick={addUser}>Add User (+)</Col>
       </Col>
     </Col>
   );
