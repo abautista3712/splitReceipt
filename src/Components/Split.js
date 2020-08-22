@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const tempUser = [1, 2, 3];
 
 const Split = () => {
+  useEffect(() => {
+    console.log("useEffect has been called");
+  }, [tempUser]);
+
   const addUser = () => {
-    return tempUser.push(4), (<Col>Test</Col>);
+    return console.log(tempUser), tempUser.push(tempUser.length + 1);
   };
+
   return (
     <Col>
       <Col>
