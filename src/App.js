@@ -1,6 +1,6 @@
 import React from "react";
 import Receipt from "./Components/Receipt";
-import Split from "./Components/Split";
+import Users from "./Components/Users";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -14,7 +14,7 @@ function App() {
     <Container>
       <Row>
         <Col style={{ borderStyle: "solid" }}>
-          <Split />
+          <Users />
         </Col>
         <Col style={{ borderStyle: "solid", height: "100%" }}>
           <Receipt />
